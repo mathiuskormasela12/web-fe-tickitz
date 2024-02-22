@@ -1,0 +1,80 @@
+.hero {
+  background-color: white;
+}
+
+.titleHeroContent {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  color: #14142B;
+}
+
+.card {
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 14rem !important;
+  border: 0.1px solid #DEDEDE;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: 1px 8px 30px rgba(186, 186, 186, 0.25);
+
+  .imgCard {
+    width: 10rem;
+    height: 15rem;
+  }
+
+  .cardBody {
+    padding: 0 !important;
+  }
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.subtitle {
+  font-size: .9rem;
+  text-transform: capitalize;
+}
+
+.hideScroll {
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.movieWrapper {
+  display: inline-flex;
+}
+
+.cardShow {
+  transition: 1s all;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 14rem;
+
+  .cardBodyShow {
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+.btnContainer {
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.btnWrapper {
+  display: inline-flex;
+  overflow: hidden;
+}

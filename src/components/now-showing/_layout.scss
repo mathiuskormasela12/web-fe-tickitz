@@ -1,0 +1,85 @@
+.hero {
+  background-color: #F5F6F8;
+  height: 32.5rem;
+}
+
+.titleHeroContent::after {
+  content: '';
+  display: block;
+  border: 1px solid $primary;
+  position: relative;
+  top: .7rem;
+  left: 1.9rem;
+  width: 4rem;
+}
+
+.titleHeroContent {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.card {
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 14rem !important;
+  background-color: transparent;
+  border-color: white;
+  height: 18.3rem;
+  overflow: hidden;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  
+  .imgCard {
+    width: 10rem;
+    height: 15rem;
+  }
+  
+
+  &:hover {
+    background-color: white;
+    border-color: white;
+    height: auto;
+    box-shadow: 0px 8px 30px rgba(186, 186, 186, 0.25);
+  }
+
+  .cardBody {
+    padding: 0 !important;
+  }
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.subtitle {
+  font-size: .9rem;
+  text-transform: capitalize;
+}
+
+.hideScroll {
+  overflow-x: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.movieWrapper {
+  display: inline-flex;
+}
+
+.cardShow {
+  transition: 1s all;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 14rem;
+
+  .cardBodyShow {
+    padding: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
